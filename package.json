@@ -1,0 +1,33 @@
+{
+  "name": "rspack-project",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nx rspack:serve",
+    "build": "cross-env NODE_ENV=production nx rspack:build"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@nx/js": "19.5.7",
+    "@nx/rspack": "^19.5.0",
+    "@rspack/cli": "1.0.0-beta.4",
+    "@rspack/core": "1.0.0-beta.4",
+    "@rspack/dev-server": "^0.7.5",
+    "@rspack/plugin-minify": "^0.7.5",
+    "@rspack/plugin-react-refresh": "1.0.0-beta.4",
+    "@swc-node/register": "~1.9.1",
+    "@swc/core": "~1.5.7",
+    "@swc/helpers": "~0.5.11",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "cross-env": "^7.0.3",
+    "nx": "19.2.3",
+    "prettier": "^2.6.2",
+    "react-refresh": "^0.14.0",
+    "typescript": "~5.5.2"
+  },
+  "nx": {}
+}

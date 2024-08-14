@@ -1,0 +1,23 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "targetDefaults": {
+    "build": {
+      "outputs": [
+        "{projectRoot}/dist"
+      ],
+      "cache": true
+    }
+  },
+  "defaultBase": "master",
+  "plugins": [
+    {
+      "plugin": "@nx/rspack/plugin",
+      "options": {
+        "buildTargetName": "rspack:build",
+        "serveTargetName": "rspack:serve",
+        "previewTargetName": "rspack:preview",
+        "serveStaticTargetName": "rspack:serve-static"
+      }
+    }
+  ]
+}
